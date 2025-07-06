@@ -2,10 +2,10 @@
 
 To run this project, you’ll need the following files:
 
-| File Name                        | Description                                |
-|----------------------------------|--------------------------------------------|
-| `cleaned_data_project1_ds.csv`  | Initial cleaned dataset (CSV format)       |
-| `DS_Udacity_Project1_GDP.ipynb` | Jupyter Notebook with analysis & modeling  |
+| File Name                        | Description                               |
+|----------------------------------|-------------------------------------------|
+| `cleaned_data_project1_ds.csv`  | Initial cleaned dataset (CSV format)      |
+| `DS_Udacity_Project1_GDP.ipynb` | Jupyter Notebook with analysis & modeling |
 
 The notebook follows the [CRISP-DM methodology](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) — a structured approach for data mining projects.
 
