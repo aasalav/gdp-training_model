@@ -29,7 +29,8 @@ To evaluate variable importance, two dataset versions were used:
 - **Top 10 features** (selected by highest correlation coefficients)  
 - **Full dataset** with all 27 features  
 
-### Linear Regression Model Comparison: Top 10 vs All Features
+---
+### 📈 Linear Regression Model Comparison: Top 10 vs All Features
 
 - **R²:** Models using all features outperform those with only the top 10 variables on both training and test sets (Train: 0.82 vs 0.70, Test: 0.83 vs 0.76).
 - **RMSE & MAE:** The errors (RMSE and MAE) are consistently lower when using all variables, indicating improved prediction accuracy.
@@ -43,3 +44,45 @@ To evaluate variable importance, two dataset versions were used:
 | RMSE (Test)  | 7470.319         | 6262.955      |
 | MAE (Train)  | 6099.180         | 5294.338      |
 | MAE (Test)   | 5319.696         | 5022.357      |
+
+---
+
+### 🌳🌳🌳🌳 Random Forest Model Comparison: Top 10 vs All Features
+
+#### Intro
+✅ **Can Random Forest help you select relevant variables?**
+
+**Yes!**
+
+Random Forest is very popular for feature selection because:
+
+- It can capture non-linear relationships and interactions.  
+- It provides a measure of feature importance based on how much each variable reduces prediction error in the trees.
+
+So, instead of just looking at correlation, you use Random Forest to learn which variables are truly helpful for predicting GDP.
+
+---
+
+#### How does Random Forest compute feature importance?
+
+In Random Forest, each decision tree splits data using the variables that most reduce the prediction error (measured by impurity, like Mean Squared Error for regression).  
+The importance of a variable is calculated as the average reduction in error it brings across all trees.
+
+Variables that frequently split nodes near the top of the trees (which means they explain a lot of the variation) get higher importance scores.
+
+---
+
+#### Model Comparison: Random Forest — Top 10 vs All Features
+
+- **R²:** All features slightly outperform Top 10 (Train: 0.86 vs 0.85, Test: 0.83 vs 0.82).  
+- **RMSE & MAE:** Prediction errors (RMSE & MAE) are marginally lower with all features on both train and test sets.  
+- **Summary:** Top 10 features offer strong performance, but including all variables yields slightly better overall accuracy.
+
+| Metric       | Top 10 Variables | All Variables |
+|--------------|------------------|---------------|
+| R² (Train)   | 0.853            | 0.862         |
+| R² (Test)    | 0.815            | 0.829         |
+| RMSE (Train) | 6274.602         | 6069.157      |
+| RMSE (Test)  | 6593.996         | 6352.898      |
+| MAE (Train)  | 4622.395         | 4539.835      |
+| MAE (Test)   | 4838.279         | 4712.208      |
