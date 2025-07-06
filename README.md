@@ -15,22 +15,39 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 
 ## Project Motivation<a name="motivation"></a>
 
-For this project, I was interestested in using Stack Overflow data from 2017 to better understand:
+For this project, I want to find which parameters are good element predictors for GDP per capita for countries within SCHENGEN economic zone using a dataset from https://databank.worldbank.org/. For that I used available data from 1975 to 2024.
 
-1. How other developers suggested breaking into the field (what education to pursue)?
-2. What factors about an individual contributed to salary?
-3. How bias played a role in the suggestions of developers for how to break into the field?
-4. What was the state of bootcamps for assisting individuals with breaking into developer roles?
-5. How were bootcamps assisting with increasing diversity in tech careers?
+* Compare two commonly used models Linear Regression (LR) and Random Forest (RF)
+* Present the 2 models and explain their strengths and weakness and compared
 
-The full set of files related to this course are owned by Udacity, so they are not publicly available here.  However, you can see pieces of the analysis here.  This README also serves as a template for students to follow in creating their own project README files.
+Main objective of the project is to
+Identify top indicators that can predict GDP
 
+How?
+1. Using two commonly used models Linear Regression (LR) and Random Forest (RF)
+2. Compare the 2 models and explain their strengths and weakness.
 
 ## File Descriptions <a name="files"></a>
 
-There are 3 notebooks available here to showcase work related to the above questions.  Each of the notebooks is exploratory in searching through the data pertaining to the questions showcased by the notebook title.  Markdown cells were used to assist in walking through the thought process for individual steps.  
+There is 1 Jupyther notebooks available that contains all the analysis and the codes. 
+This file follows the crisp-dm methodology or Cross-industry standard process for data mining
+ (link: Cross-industry standard process for data mining - Wikipedia )
 
-There is an additional `.py` file that runs the necessary code to obtain the final model used to predict salary.
+The document is divided following these structure to help navigate the different sections
+
+- [Step 1: Data Understanding]
+- [Step 2: Data Preparation]
+- [Step 3: Data Modelling]
+    - [3 A) Linear Regression Models]
+    - [3 A.1 LR Performance Comparison]
+    - [3 B) Random Forest Models]
+    - [3 B.1 RF Performance Comparison]
+    - [3 C) Comparison LR vs RF]
+- [Step 4: Conclusions]
+
+Markdown cells were used to assist in walking through the thought process for individual steps.  
+
+
 
 ## Results<a name="results"></a>
 
@@ -38,4 +55,4 @@ The main findings of the code can be found at the post available [here](https://
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-Must give credit to Stack Overflow for the data.  You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/stackoverflow/so-survey-2017/data).  Otherwise, feel free to use the code here as you would like! 
+Must give credit to https://databank.worldbank.org/ for making these valuable data available. 
