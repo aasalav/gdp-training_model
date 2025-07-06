@@ -1,29 +1,32 @@
+📄 File Descriptions <a name="files"></a>
+To run this project, there are two main files:
 
-## File Descriptions <a name="files"></a>
+cleaned_data_project1_ds.csv — Initial dataset (CSV format)
 
-To run this project there are 2 Files:
+DS_Udacity_Project1_GDP.ipynb — Jupyter Notebook containing the full analysis
 
-* Initial data (csv file) : cleaned_data_project1_ds.csv
-* DS Udacity project1 (GDP).ipyng (JupyterNotebook file)
+The Jupyter Notebook includes all code, visualizations, and analysis.
+It follows the CRISP-DM methodology (Cross-industry standard process for data mining).
 
-The Jupyther notebooks available that contains all the analysis and the codes. 
-This file follows the crisp-dm methodology or Cross-industry standard process for data mining
- (link: Cross-industry standard process for data mining - Wikipedia )
+📚 Notebook Structure
+The notebook is structured into the following sections to help you navigate easily:
 
-The document is divided following these structure to help navigate the different sections
+Step 1: Data Understanding
 
-- [Step 1: Data Understanding]
-- [Step 2: Data Preparation]
-- [Step 3: Data Modelling]
-    - [3 A) Linear Regression Models]
-    - [3 A.1 LR Performance Comparison]
-    - [3 B) Random Forest Models]
-    - [3 B.1 RF Performance Comparison]
-    - [3 C) Comparison LR vs RF]
-- [Step 4: Conclusions]
+Step 2: Data Preparation
 
-Markdown cells were used to assist in walking through the thought process for individual steps.  
+Step 3: Data Modeling
 
+3A) Linear Regression Models
 
+3A.1) Linear Regression Performance Comparison
 
-## Results<a name="results"></a>
+3B) Random Forest Models
+
+3B.1) Random Forest Performance Comparison
+
+3C) Comparison: Linear Regression vs Random Forest
+
+Step 4: Conclusions
+
+Markdown cells are used throughout to guide readers through the thought process and steps taken.
