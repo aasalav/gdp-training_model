@@ -1,30 +1,64 @@
-## 📁 File Descriptions <a name="files"></a>
+# gdp-training_model
+Compare Linear regression and Random Forest tree method to predict GDP
 
-To run this project, you’ll need the following files:
+### Table of Contents
 
-| File Name                        | Description                               |
-|----------------------------------|-------------------------------------------|
-| `cleaned_data_project1_ds.csv`  | Initial cleaned dataset (CSV format)      |
-| `DS_Udacity_Project1_GDP.ipynb` | Jupyter Notebook with analysis & modeling |
+1. [Installation](#installation)
+2. [Project Motivation](#motivation)
+3. [File Descriptions](#files)
+4. [Results](#results)
+5. [Licensing, Authors, and Acknowledgements](#licensing)
 
-The notebook follows the [CRISP-DM methodology](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) — a structured approach for data mining projects.
+## Installation <a name="installation"></a>
 
----
+There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python.  The code should run with no issues using Python versions 3.*.
 
-## 🧭 Notebook Structure
+## Project Motivation<a name="motivation"></a>
 
-The notebook is organized into the following steps:
+For this project, I want to find which parameters are good element predictors for GDP per capita for countries within SCHENGEN economic zone using a dataset from https://databank.worldbank.org/. For that I used available data from 1975 to 2024.
 
-1. **Data Understanding**
-2. **Data Preparation**
-3. **Modeling**
-    - 📌 3A. Linear Regression Models  
-    - 📈 3A.1 LR Performance Comparison  
-    - 🌳 3B. Random Forest Models  
-    - 📊 3B.1 RF Performance Comparison  
-    - ⚖️ 3C. Comparison: LR vs RF  
-4. **Conclusions**
+* Compare two commonly used models Linear Regression (LR) and Random Forest (RF)
+* Present the 2 models and explain their strengths and weakness and compared
 
-> 💡 *Markdown cells in the notebook walk through the reasoning behind each step, helping you follow the analysis clearly.*
+Main objective of the project is to
+Identify top indicators that can predict GDP
 
----
+How?
+1. Using two commonly used models Linear Regression (LR) and Random Forest (RF)
+2. Compare the 2 models and explain their strengths and weakness.
+
+## File Descriptions <a name="files"></a>
+
+To run this project, there are two main files:
+
+cleaned_data_project1_ds.csv — Initial dataset (CSV format)
+
+DS_Udacity_Project1_GDP.ipynb — Jupyter Notebook containing the full analysis
+
+The Jupyther notebooks available contains all the analysis and the codes. 
+This file follows the crisp-dm methodology or Cross-industry standard process for data mining
+ (link: Cross-industry standard process for data mining - Wikipedia )
+
+The document is divided following these structure to help navigate the different sections
+
+- [Step 1: Data Understanding]
+- [Step 2: Data Preparation]
+- [Step 3: Data Modelling]
+    - [3 A) Linear Regression Models]
+    - [3 A.1 LR Performance Comparison]
+    - [3 B) Random Forest Models]
+    - [3 B.1 RF Performance Comparison]
+    - [3 C) Comparison LR vs RF]
+- [Step 4: Conclusions]
+
+Markdown cells were used to assist in walking through the thought process for individual steps.  
+
+
+
+## Results<a name="results"></a>
+
+The main findings of the code can be found at the post available [here](https://medium.com/@josh_2774/how-do-you-become-a-developer-5ef1c1c68711).
+
+## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+
+Must give credit to https://databank.worldbank.org/ for making these valuable data available. 
