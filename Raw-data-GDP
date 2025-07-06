@@ -1,1 +1,29 @@
 
+## File Descriptions <a name="files"></a>
+
+To run this project there are 2 Files:
+
+* Initial data (csv file) : cleaned_data_project1_ds.csv
+* DS Udacity project1 (GDP).ipyng (JupyterNotebook file)
+
+The Jupyther notebooks available that contains all the analysis and the codes. 
+This file follows the crisp-dm methodology or Cross-industry standard process for data mining
+ (link: Cross-industry standard process for data mining - Wikipedia )
+
+The document is divided following these structure to help navigate the different sections
+
+- [Step 1: Data Understanding]
+- [Step 2: Data Preparation]
+- [Step 3: Data Modelling]
+    - [3 A) Linear Regression Models]
+    - [3 A.1 LR Performance Comparison]
+    - [3 B) Random Forest Models]
+    - [3 B.1 RF Performance Comparison]
+    - [3 C) Comparison LR vs RF]
+- [Step 4: Conclusions]
+
+Markdown cells were used to assist in walking through the thought process for individual steps.  
+
+
+
+## Results<a name="results"></a>
