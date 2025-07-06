@@ -1,32 +1,30 @@
-📄 File Descriptions <a name="files"></a>
-To run this project, there are two main files:
+## 📁 File Descriptions <a name="files"></a>
 
-cleaned_data_project1_ds.csv — Initial dataset (CSV format)
+To run this project, you’ll need the following files:
 
-DS_Udacity_Project1_GDP.ipynb — Jupyter Notebook containing the full analysis
+| File Name                        | Description                                |
+|----------------------------------|--------------------------------------------|
+| `cleaned_data_project1_ds.csv`  | Initial cleaned dataset (CSV format)       |
+| `DS_Udacity_Project1_GDP.ipynb` | Jupyter Notebook with analysis & modeling  |
 
-The Jupyter Notebook includes all code, visualizations, and analysis.
-It follows the CRISP-DM methodology (Cross-industry standard process for data mining).
+The notebook follows the [CRISP-DM methodology](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) — a structured approach for data mining projects.
 
-📚 Notebook Structure
-The notebook is structured into the following sections to help you navigate easily:
+---
 
-Step 1: Data Understanding
+## 🧭 Notebook Structure
 
-Step 2: Data Preparation
+The notebook is organized into the following steps:
 
-Step 3: Data Modeling
+1. **Data Understanding**
+2. **Data Preparation**
+3. **Modeling**
+    - 📌 3A. Linear Regression Models  
+    - 📈 3A.1 LR Performance Comparison  
+    - 🌳 3B. Random Forest Models  
+    - 📊 3B.1 RF Performance Comparison  
+    - ⚖️ 3C. Comparison: LR vs RF  
+4. **Conclusions**
 
-3A) Linear Regression Models
+> 💡 *Markdown cells in the notebook walk through the reasoning behind each step, helping you follow the analysis clearly.*
 
-3A.1) Linear Regression Performance Comparison
-
-3B) Random Forest Models
-
-3B.1) Random Forest Performance Comparison
-
-3C) Comparison: Linear Regression vs Random Forest
-
-Step 4: Conclusions
-
-Markdown cells are used throughout to guide readers through the thought process and steps taken.
+---
