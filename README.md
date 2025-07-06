@@ -29,7 +29,13 @@ How?
 
 ## File Descriptions <a name="files"></a>
 
-There is 1 Jupyther notebooks available that contains all the analysis and the codes. 
+To run this project, there are two main files:
+
+cleaned_data_project1_ds.csv — Initial dataset (CSV format)
+
+DS_Udacity_Project1_GDP.ipynb — Jupyter Notebook containing the full analysis
+
+The Jupyther notebooks available contains all the analysis and the codes. 
 This file follows the crisp-dm methodology or Cross-industry standard process for data mining
  (link: Cross-industry standard process for data mining - Wikipedia )
 
