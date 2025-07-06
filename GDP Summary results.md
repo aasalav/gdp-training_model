@@ -47,8 +47,8 @@ To evaluate variable importance, two dataset versions were used:
 | MAE (Test)   | 5319.696         | 5022.357      |
 
 ---
-## 3.2 🌳🌳🌳🌳 Random Forest
-### 🌳🌳🌳🌳 Random Forest Model Comparison: Top 10 vs All Features
+## 3.2 🌳 Random Forest
+### 🌳 Random Forest Model Comparison: Top 10 vs All Features
 
 #### Intro
 ✅ **Can Random Forest help you select relevant variables?**
@@ -87,3 +87,68 @@ Variables that frequently split nodes near the top of the trees (which means the
 | RMSE (Test)  | 6593.996         | 6352.898      |
 | MAE (Train)  | 4622.395         | 4539.835      |
 | MAE (Test)   | 4838.279         | 4712.208      |
+
+---
+## 3.3 Comparison 📈 Linear Regression vs 🌲Random Forest
+
+### ✅ Model Comparison: Linear Regression vs Random Forest
+
+### 1️⃣ Train vs Test Metrics
+
+| Metric          | Linear Regression (Top 10) | Linear Regression (All) | Random Forest (Top 10) | Random Forest (All) |
+|-----------------|----------------------------|-------------------------|------------------------|---------------------|
+| **R² (Train)**  | 0.700                      | 0.822                   | 0.831                  | 0.862               |
+| **R² (Test)**   | 0.763                      | 0.833                   | 0.772                  | 0.829               |
+| **RMSE (Train)**| 8,950.800                  | 6,900.696               | 6,724.287              | 6,069.157           |
+| **RMSE (Test)** | 7,470.319                  | 6,262.955               | 7,319.621              | 6,352.898           |
+| **MAE (Train)** | 6,099.180                  | 5,294.338               | 4,993.757              | 4,539.835           |
+| **MAE (Test)**  | 5,319.696                  | 5,022.357               | 5,532.461              | 4,712.208           |
+
+---
+
+### 2️⃣ Interpretation & Insights
+
+✅ **Impact of Using All Variables**  
+- Both models perform better when using **all variables** rather than just the top 10:  
+  - **Higher R²** means more variance explained.  
+  - **Lower RMSE (Root Mean Squared Error) & MAE (Mean Absolute Error)** means more accurate predictions.  
+- This shows that additional variables contain relevant information.
+
+---
+
+✅ **Linear Regression vs Random Forest**  
+- **Random Forest** has higher Train R² and lower Train error — showing it fits the training data better and can capture nonlinear patterns.  
+- However, both models perform **very similarly on Test data**.  
+  - Test R² is ~0.83 for both.  
+  - Test RMSE and MAE are comparable.  
+- **Linear Regression** is simpler and more interpretable.  
+- **Random Forest** is more flexible but has a mild risk of overfitting.
+
+---
+
+### 3️⃣ Key Takeaways
+
+| Aspect              | Linear Regression | Random Forest      |
+|---------------------|-------------------|--------------------|
+| **Training Fit**    | Lower            | Higher            |
+| **Test Performance**| Similar          | Similar           |
+| **Captures Nonlinearities** | ❌ No           | ✅ Yes             |
+| **Interpretability**| ✅ High          | ❌ Lower          |
+| **Overfitting Risk**| ✅ Low           | ⚠️ Slightly Higher |
+
+---
+
+### 4️⃣ Next Steps
+
+- ✅ Tune Random Forest hyperparameters for potential improvements.  
+- ✅ Use feature importance from Random Forest to refine feature selection.  
+- ✅ Consider Linear Regression if interpretability is a priority.  
+- ✅ Keep monitoring the Train-Test gap to avoid overfitting.
+
+---
+
+**Overall:**  
+Using **all variables** provides the best predictive power for both methods. Random Forest slightly improves training fit but both models generalize equally well.
+
+✨ **Good practice:** Balance accuracy, interpretability, and complexity based on your project goals!
+
