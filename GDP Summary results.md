@@ -1,6 +1,6 @@
-# Project Report
+# Summary Resuls
 
-## 1. Introduction & Data Cleaning
+## 1.📊 Data understanding
 
 The initial dataset contained more than 50 columns, many of which had missing values and non-numeric data. Therefore, the original dataset was reduced, and this project starts with the `cleaned_data_project1_ds.csv` file.
 
@@ -10,7 +10,7 @@ By removing this variable, the analysis aims to highlight the contribution of ad
 
 ---
 
-## 2. Data Cleaning Summary
+## 🧹 2. Data Cleaning Summary
 
 - The original dataset had 56 columns with mixed data types; all non-numeric columns were removed to simplify analysis, leaving 27 numeric variables.
 - The dataset contained 21% missing values. Instead of dropping rows (which would reduce sample size), missing values were imputed using the median of each column, preserving all data points.
@@ -19,7 +19,7 @@ By removing this variable, the analysis aims to highlight the contribution of ad
 
 ---
 
-## 3. Data Modelling
+## 🤖 3. Data Modelling
 
 As outlined in the project goals, **GDP per capita** will be predicted using two modeling approaches:  
 - **Linear Regression (LR)**  
@@ -30,6 +30,7 @@ To evaluate variable importance, two dataset versions were used:
 - **Full dataset** with all 27 features  
 
 ---
+## 📈 3.1 Linear Regression
 ### 📈 Linear Regression Model Comparison: Top 10 vs All Features
 
 - **R²:** Models using all features outperform those with only the top 10 variables on both training and test sets (Train: 0.82 vs 0.70, Test: 0.83 vs 0.76).
@@ -46,7 +47,7 @@ To evaluate variable importance, two dataset versions were used:
 | MAE (Test)   | 5319.696         | 5022.357      |
 
 ---
-
+## 3.2 🌳🌳🌳🌳 Random Forest
 ### 🌳🌳🌳🌳 Random Forest Model Comparison: Top 10 vs All Features
 
 #### Intro
