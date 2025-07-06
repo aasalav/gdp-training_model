@@ -1,4 +1,4 @@
-# Summary Resuls
+# Summary Results
 
 ## 1.📊 Data understanding
 
